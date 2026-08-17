@@ -1,4 +1,4 @@
-# IT Troubleshooting Lab
+# IT Troubleshooting Simulator
 
 A desktop-support training simulator. Fifteen tickets from a working service desk, each
 opening with what the user said rather than what is wrong. You investigate with a simulated
