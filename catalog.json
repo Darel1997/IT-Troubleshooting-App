@@ -1,0 +1,394 @@
+[
+  {
+    "id": "no-internet",
+    "title": "No internet on a wired desk",
+    "category": "Network",
+    "difficulty": "Beginner",
+    "ticket_number": "INC-104721",
+    "stages": [
+      "Establish the interface state",
+      "Inspect the physical path",
+      "Prove it with a known-good port",
+      "Confirm addressing returns"
+    ],
+    "optimal_steps": 4,
+    "correct_diagnosis_id": "d1",
+    "correct_fix_id": "f1",
+    "action_stages": {
+      "a1": 0,
+      "a2": 1,
+      "a3": 2,
+      "a4": 3,
+      "b1": null,
+      "b2": null,
+      "b3": null,
+      "b4": null
+    }
+  },
+  {
+    "id": "dns-failure",
+    "title": "Connected, but no site will load",
+    "category": "Network",
+    "difficulty": "Beginner",
+    "ticket_number": "INC-104733",
+    "stages": [
+      "Read the addressing",
+      "Test the local segment",
+      "Test routing to the internet",
+      "Test name resolution",
+      "Prove which resolver is at fault"
+    ],
+    "optimal_steps": 5,
+    "correct_diagnosis_id": "d1",
+    "correct_fix_id": "f1",
+    "action_stages": {
+      "a1": 0,
+      "a2": 1,
+      "a3": 2,
+      "a4": 3,
+      "a5": 4,
+      "b1": null,
+      "b2": null,
+      "b3": null,
+      "b4": null
+    }
+  },
+  {
+    "id": "dhcp-failure",
+    "title": "A row of desks loses the network at once",
+    "category": "Network",
+    "difficulty": "Intermediate",
+    "ticket_number": "INC-104750",
+    "stages": [
+      "Read the address the client gave itself",
+      "Attempt a fresh lease",
+      "Confirm the physical path is fine",
+      "Check the DHCP scope at the server"
+    ],
+    "optimal_steps": 4,
+    "correct_diagnosis_id": "d1",
+    "correct_fix_id": "f1",
+    "action_stages": {
+      "a1": 0,
+      "a2": 1,
+      "a3": 2,
+      "a4": 3,
+      "b1": null,
+      "b2": null,
+      "b3": null,
+      "b4": null
+    }
+  },
+  {
+    "id": "printer-not-printing",
+    "title": "Print jobs vanish into the queue",
+    "category": "Peripherals",
+    "difficulty": "Beginner",
+    "ticket_number": "INC-104762",
+    "stages": [
+      "Look at the queue",
+      "Check the service behind the queue",
+      "Clear the stuck job and restart the service",
+      "Verify with a test page"
+    ],
+    "optimal_steps": 4,
+    "correct_diagnosis_id": "d1",
+    "correct_fix_id": "f1",
+    "action_stages": {
+      "a1": 0,
+      "a2": 1,
+      "a3": 2,
+      "a4": 3,
+      "b1": null,
+      "b2": null,
+      "b3": null,
+      "b4": null
+    }
+  },
+  {
+    "id": "slow-computer",
+    "title": "Everything takes minutes to open",
+    "category": "Performance",
+    "difficulty": "Intermediate",
+    "ticket_number": "INC-104779",
+    "stages": [
+      "Find which resource is saturated",
+      "Identify the process responsible",
+      "Explain why that process is misbehaving",
+      "Stop it and measure the result"
+    ],
+    "optimal_steps": 4,
+    "correct_diagnosis_id": "d1",
+    "correct_fix_id": "f1",
+    "action_stages": {
+      "a1": 0,
+      "a2": 1,
+      "a3": 2,
+      "a4": 3,
+      "b1": null,
+      "b2": null,
+      "b3": null,
+      "b4": null
+    }
+  },
+  {
+    "id": "windows-update-failure",
+    "title": "A cumulative update that will not install",
+    "category": "Operating System",
+    "difficulty": "Intermediate",
+    "ticket_number": "INC-104790",
+    "stages": [
+      "Get the exact failure code",
+      "Interpret the code and test it",
+      "Reclaim the space the update needs",
+      "Retry and confirm"
+    ],
+    "optimal_steps": 4,
+    "correct_diagnosis_id": "d1",
+    "correct_fix_id": "f1",
+    "action_stages": {
+      "a1": 0,
+      "a2": 1,
+      "a3": 2,
+      "a4": 3,
+      "b1": null,
+      "b2": null,
+      "b3": null,
+      "b4": null
+    }
+  },
+  {
+    "id": "wont-boot",
+    "title": "No bootable device on a warehouse PC",
+    "category": "Hardware",
+    "difficulty": "Beginner",
+    "ticket_number": "INC-104801",
+    "stages": [
+      "Read exactly what the screen says",
+      "Inspect what is attached to the machine",
+      "Check the boot order",
+      "Boot and confirm the drive is healthy"
+    ],
+    "optimal_steps": 4,
+    "correct_diagnosis_id": "d1",
+    "correct_fix_id": "f1",
+    "action_stages": {
+      "a1": 0,
+      "a2": 1,
+      "a3": 2,
+      "a4": 3,
+      "b1": null,
+      "b2": null,
+      "b3": null,
+      "b4": null
+    }
+  },
+  {
+    "id": "outlook-not-syncing",
+    "title": "Outlook disconnected after a password change",
+    "category": "Applications",
+    "difficulty": "Intermediate",
+    "ticket_number": "INC-104815",
+    "stages": [
+      "Read the client's connection status",
+      "Test the mailbox independently of the client",
+      "Look at what the client is authenticating with",
+      "Clear the stale credential and reconnect"
+    ],
+    "optimal_steps": 4,
+    "correct_diagnosis_id": "d1",
+    "correct_fix_id": "f1",
+    "action_stages": {
+      "a1": 0,
+      "a2": 1,
+      "a3": 2,
+      "a4": 3,
+      "b1": null,
+      "b2": null,
+      "b3": null,
+      "b4": null
+    }
+  },
+  {
+    "id": "network-drive",
+    "title": "A mapped drive with a red X",
+    "category": "Network",
+    "difficulty": "Intermediate",
+    "ticket_number": "INC-104822",
+    "stages": [
+      "Find out what the drive is actually mapped to",
+      "Test whether that target resolves",
+      "Find the current supported path",
+      "Reapply policy and confirm"
+    ],
+    "optimal_steps": 4,
+    "correct_diagnosis_id": "d1",
+    "correct_fix_id": "f1",
+    "action_stages": {
+      "a1": 0,
+      "a2": 1,
+      "a3": 2,
+      "a4": 3,
+      "b1": null,
+      "b2": null,
+      "b3": null,
+      "b4": null
+    }
+  },
+  {
+    "id": "wifi-failure",
+    "title": "Corporate Wi-Fi rejects a returning laptop",
+    "category": "Network",
+    "difficulty": "Advanced",
+    "ticket_number": "INC-104834",
+    "stages": [
+      "Read the adapter and the failure reason",
+      "Find the authentication error in the log",
+      "Inspect the certificate the profile relies on",
+      "Renew the certificate and reconnect"
+    ],
+    "optimal_steps": 4,
+    "correct_diagnosis_id": "d1",
+    "correct_fix_id": "f1",
+    "action_stages": {
+      "a1": 0,
+      "a2": 1,
+      "a3": 2,
+      "a4": 3,
+      "b1": null,
+      "b2": null,
+      "b3": null,
+      "b4": null
+    }
+  },
+  {
+    "id": "account-locked",
+    "title": "An account that locks again every twenty minutes",
+    "category": "Identity",
+    "difficulty": "Beginner",
+    "ticket_number": "INC-104841",
+    "stages": [
+      "Confirm the lockout state",
+      "Find where the bad passwords are coming from",
+      "Identify what is holding the old password",
+      "Clear it and confirm the lockout stops"
+    ],
+    "optimal_steps": 4,
+    "correct_diagnosis_id": "d1",
+    "correct_fix_id": "f1",
+    "action_stages": {
+      "a1": 0,
+      "a2": 1,
+      "a3": 2,
+      "a4": 3,
+      "b1": null,
+      "b2": null,
+      "b3": null,
+      "b4": null
+    }
+  },
+  {
+    "id": "password-expired",
+    "title": "Signed in at home, refused by everything",
+    "category": "Identity",
+    "difficulty": "Beginner",
+    "ticket_number": "INC-104856",
+    "stages": [
+      "Check the account, not the laptop",
+      "Explain why the laptop still signs in",
+      "Restore a path to a domain controller",
+      "Change the password and re-authenticate"
+    ],
+    "optimal_steps": 4,
+    "correct_diagnosis_id": "d1",
+    "correct_fix_id": "f1",
+    "action_stages": {
+      "a1": 0,
+      "a2": 1,
+      "a3": 2,
+      "a4": 3,
+      "b1": null,
+      "b2": null,
+      "b3": null,
+      "b4": null
+    }
+  },
+  {
+    "id": "app-wont-launch",
+    "title": "An application that closes itself",
+    "category": "Applications",
+    "difficulty": "Intermediate",
+    "ticket_number": "INC-104863",
+    "stages": [
+      "Reproduce it and note exactly what happens",
+      "Find where a silent exit gets logged",
+      "Compare the block against the rule that caused it",
+      "Correct the rule and confirm across the affected users"
+    ],
+    "optimal_steps": 4,
+    "correct_diagnosis_id": "d1",
+    "correct_fix_id": "f1",
+    "action_stages": {
+      "a1": 0,
+      "a2": 1,
+      "a3": 2,
+      "a4": 3,
+      "b1": null,
+      "b2": null,
+      "b3": null,
+      "b4": null
+    }
+  },
+  {
+    "id": "blue-screen",
+    "title": "Repeated blue screens under CAD load",
+    "category": "Operating System",
+    "difficulty": "Advanced",
+    "ticket_number": "INC-104877",
+    "stages": [
+      "Collect the stop code and the faulting module",
+      "Establish what changed and when",
+      "Test the hypothesis by removing the suspect",
+      "Roll back and prove stability under load"
+    ],
+    "optimal_steps": 4,
+    "correct_diagnosis_id": "d1",
+    "correct_fix_id": "f1",
+    "action_stages": {
+      "a1": 0,
+      "a2": 1,
+      "a3": 2,
+      "a4": 3,
+      "b1": null,
+      "b2": null,
+      "b3": null,
+      "b4": null
+    }
+  },
+  {
+    "id": "no-audio",
+    "title": "Silence after docking",
+    "category": "Peripherals",
+    "difficulty": "Beginner",
+    "ticket_number": "INC-104889",
+    "stages": [
+      "Check the obvious controls",
+      "Read which device Windows is actually using",
+      "Point output at the headset and test",
+      "Set the per-application device so it holds"
+    ],
+    "optimal_steps": 4,
+    "correct_diagnosis_id": "d1",
+    "correct_fix_id": "f1",
+    "action_stages": {
+      "a1": 0,
+      "a2": 1,
+      "a3": 2,
+      "a4": 3,
+      "b1": null,
+      "b2": null,
+      "b3": null,
+      "b4": null
+    }
+  }
+]
